@@ -1,0 +1,244 @@
+/*
+  filename: style.css
+  author: Anmol Dua
+  created: 20-03-2018
+  last-modified: 24-3-2018
+  description: Main css file used accross all web pages in this directory
+*/
+
+/* NOTE: the colour combinations are used from "https://www.canva.com/learn/100-color-combinations/" */
+
+/* bottom element gives the background graphic
+and some describes the font size along with disabling
+text decoration */
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/background.jpg"); /* https://www.123rf.com/photo_29914052_stock-illustration-colorful-abstract-background-of-clean-fresh-concept-bright-background-of-white-center-for-text-fun-p.html */
+  background-attachment: fixed;
+  text-decoration: none;
+  margin-bottom: 1.5%;
+  padding-top: 1%;
+}
+
+/* customization of all headding 1 tags */
+
+h1 {
+  font: italic small-caps normal 3em Arial, Helvetica, sans-serif;
+}
+
+/* Styling the one and only table and its cells on the website */
+table,
+table th,
+table td {
+  border: 2px solid black;
+}
+
+th {
+  background-color: #f98866;
+}
+
+td {
+  text-align: center;
+  background-color: #89da59;
+}
+
+/* container source taken from bootstrap link - "https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap.css" */
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+/* these elements make up the nav-bar at the top */
+.navbar ul {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+  font-size: 1.5em;
+  list-style-type: none;
+  background: #ff420e;
+  box-shadow: 1px 1px 10px 1px gray;
+  overflow: hidden;
+}
+
+.navbar .nav-item {
+  border-right: 2px solid #ff420e;
+  float: left;
+  border-bottom: 2px solid #ff420e;
+}
+
+.navbar .nav-item a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+}
+
+.navbar .nav-item a:hover{
+  text-decoration: none;
+}
+
+.navbar .nav-item:hover {
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-item.active {
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+/* main styling for homepage */
+.main {
+  margin-top: 5%;
+}
+
+/* form handling or in other words styling */
+.form-control {
+  font-size: 1.025em;
+}
+
+.form-control input,
+.form-control input:valid {
+  border: solid #ccc 3px;
+}
+
+.form-control input:invalid {
+  border: solid red 3px;
+}
+
+/* The help text for the topic page */
+
+.help-text {
+  border-radius: 1px;
+  background-color: #89da59;
+  border-left: 6px solid #528435;
+  color: black;
+}
+
+.help-text p {
+  padding-left: 10px;
+}
+
+/* ----------------------- */
+/* Enhancements Styling */
+
+.nav-image {
+  display: block;
+  width: 35%;
+}
+
+.help-image {
+  display: block;
+  width: 45%;
+}
+
+.head-foot-img {
+  display: block;
+  width: 40%;
+  height: auto;
+  border: black solid 3px;
+  margin: 10px;
+}
+
+/* ----------------------- */
+/* These further elements change the look of the basic footer
+   and sticks it to the bottom of the page  */
+
+.footer {
+  font-size: 0.8em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .link:hover {
+  color: red;
+  font-size: 2em;
+}
+/* ----------------------- */
+
+/* Header decoration styles */
+#header {
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 2px double black;
+}
+
+/* Homepage Main text styling */
+#home-main {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+/* Styling for the json-logo */
+#json-logo {
+  margin-right: 3%;
+  margin-top: 5%;
+  float: right;
+  border-radius: 50%;
+  box-shadow: #ff420e 3px 3px 200px 10px;
+}
+
+/* aside tag with id structures style */
+#structures {
+  float: right;
+  clear: both;
+  width: 25%;
+  border: 3px solid rgba(128, 128, 128, 0.2);
+}
+
+/* table and image wrapper for the comparison */
+#table, #image{
+  width: 50%;
+  float: left;
+  margin-bottom: 3%;
+  display: block;
+}
+
+/* for paragraphs for the comparison XML vs JSON */
+#argument, #future{
+  width: 48%;
+  float: left;
+  margin: 0.5%;
+  margin-bottom: 3%;
+  display: block;
+  border: double 3px rgba(128, 128, 128, 0.3);
+}

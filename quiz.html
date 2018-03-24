@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Assignment Part 1 JSON (Javascript Object Notation) Quiz page " />
+    <meta name="keywords" content="JSON, Javascript, Object, Notation, Quiz" />
+    <meta name="author" content="Anmol Dua"  />
+    <title>JSON (Javascript Object Notation) | Quiz</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" media="screen and (max-width: 800px)" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="nav-item"><a href="index.html">Homepage</a></li>
+        <li class="nav-item"><a href="enhancements.html">Enhancements</a></li>
+        <li class="nav-item"><a href="topic.html">Topic</a></li>
+        <li class="nav-item active"><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <article class="container">
+      <header>
+        <p id="header">All About JSON</p>
+      </header>
+      <section>
+        <h1>Before answering the quiz please fill out the following details:-</h1>
+        <form class="form-control" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+          <fieldset>
+            <legend>Personal Details</legend>
+            <label for="student_id">Your Student ID : </label>
+            <input id="student_id"
+                   type="text"
+                   name="student_id"
+                   placeholder="Your Student ID"
+                   pattern="^[0-9]{7}|[0-9]{9}$"
+                   title="The Student id should be 7 or 10 characters long and should only have numbers."
+                   required="required"/>
+           <br />
+           <label for="first_name">First Name : </label>
+           <input name="name[]"
+                  type="text"
+                  id="first_name"
+                  placeholder="first Name"
+                  pattern="^[A-Za-z-]{0,25}$"
+                  title="name can not contain symbols and numbers"
+                  required="required"/>
+          <br />
+          <label for="last_name">Last Name : </label>
+          <input name="name[]"
+                 type="text"
+                 id="last_name"
+                 placeholder="last Name"
+                 pattern="^[A-Za-z-]{0,25}$"
+                 title="name can not contain symbols and numbers"
+                 required="required"/>
+          </fieldset>
+          <h3>The Quiz Starts here:-</h3>
+          <fieldset>
+            <legend>The Quiz</legend>
+            <fieldset>
+              <legend>What does JSON Stands for?</legend>
+              <input type="text" name="txt_ques" placeholder="Answer" required="required" />
+            </fieldset>
+            <fieldset>
+              <legend>JSON values cannot be one of the following data types.?</legend>
+              <input id="q2-o1" type="radio" name="q2" value="1" />
+              <label for="q2-o1">Function</label><br />
+              <input id="q2-o2" type="radio" name="q2" value="2" required="required" />
+              <label for="q2-o2">Undefined</label><br />
+              <input id="q2-o3" type="radio" name="q2" value="3" />
+              <label for="q2-o3">Date</label><br />
+              <input id="q2-o4" type="radio" name="q2" value="4" />
+              <label for="q2-o4">All of the Above</label><br />
+              <p>Source : <a href="http://mcqstack.com/json/json.html">[1]</a></p>
+            </fieldset>
+            <fieldset>
+              <legend>Which of them is a valid JSON abject</legend>
+              <input id="q3-o1" type="checkbox" name="q3[]" value="1" />
+              <label for="q3-o1">
+                { "name": "Smiley",
+                  "age": 20,
+                  "phone": null,
+                  "email": "null",
+                  "happy": true }
+              </label><br />
+              <input id="q3-o2" type="checkbox" name="q3[]" value="2" required="required" />
+              <label for="q3-o2">
+                { "name": "Smiley",
+                  "age": 20,
+                  "phone": "888-123-4567",
+                  "email": smiley@xyz.com,
+                  "happy": true }
+              </label><br />
+              <input id="q3-o3" type="checkbox" name="q3[]" value="3" />
+              <label for="q3-o3">
+                { "name": "Smiley",
+                  "age": 20,
+                  "phone": "888-123-4567",
+                  "email": "smiley@xyz.com",
+                  "happy": true }
+              </label><br />
+              <input id="q3-o4" type="checkbox" name="q3[]" value="2" />
+              <label for="q3-o4">
+                { "name": "Smiley",
+                  "age": 20,
+                  "phone": "888-123-4567",
+                  "email": "smiley@xyz.com",
+                  "happy": true }
+              </label><br />
+              <p>source : <a href="https://lagunita.stanford.edu/courses/DB/JSON/SelfPaced/courseware/ch-json_data/seq-quiz-json/">[2]</a></p>
+            </fieldset>
+            <fieldset>
+              <legend>Which of the following is NOT a valid JSON array?</legend>
+              <select name="q4" required="required">
+                <option value="">Please Select</option>
+                <option value="1">[ 1, 2, "dog", "cat", true, false, [1, "dog", null], {} ]</option>
+                <option value="2">[ "1", "2", "dog", "cat", "true", "false", ["1", "dog", "null"], {"pet":"dog", "fun":"true"} ]</option>
+                <option value="3">[ 1, 2, dog, cat, true, false, [1, "dog", null], {"pet":"dog", "fun":true} ]</option>
+                <option value="4">[ 1, 2, "dog", "cat", true, false, [1, "dog", null], {"pet":"dog", "fun":true} ]</option>
+              </select>
+              <p>source : <a href="https://lagunita.stanford.edu/courses/DB/JSON/SelfPaced/courseware/ch-json_data/seq-quiz-json/">[3]</a></p>
+            </fieldset>
+            <fieldset>
+              <legend>When was json formed?</legend>
+              <input type="date" name="q5" value="" required="required" />
+            </fieldset>
+            <fieldset>
+              <legend>For submition or resetting</legend>
+              <label for="submit">All Questions answered?</label>
+              <input id="submit" type="submit" value="Submit" /><br />
+              <label for="reset">Created a mess?</label>
+              <input id="reset" type="reset" value="Reset" />
+            </fieldset>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <hr />
+      Markup By - <a class="link" href="mailto:101983924@student.swin.edu.au">Anmol Dua</a>
+    </footer>
+  </body>
+</html>

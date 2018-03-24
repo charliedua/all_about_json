@@ -1,0 +1,34 @@
+/*
+  filename: css_as_preprocessor.css
+  author: Anmol Dua
+  created: 20-03-2018
+  last-modified: 22-3-2018
+  description: a preprocessor for css can be used as a library
+*/
+
+/* if the screen gets smaller than 800px then elements will also adjust */
+@media screen and (max-width: 800px) {
+  h1 {
+    font: italic small-caps normal 2em/150% Arial, Helvetica, sans-serif;
+  }
+  #table, #image {
+    width: 100%;
+    height: 100%;
+    float: none;
+  }
+  #structures {
+    float: left;
+    clear: none;
+    width: 100%;
+  }
+  #argument, #future{
+    width: 100%;
+    margin-bottom: 10%;
+    display: block;
+    border: none;
+  }
+  .nav-image, .help-image, .head-foot-img {
+    width: 100%;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Assignment Part 1 JSON (Javascript Object Notation) " />
+    <meta name="keywords" content="JSON, Javascript, Object, Notation, Main" />
+    <meta name="author" content="Anmol Dua"  />
+    <title>JSON (Javascript Object Notation) | Topic</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" media="screen and (max-width: 800px)" />
+    <link href="styles/images/JSON_vector_logo.SVG.PNG" rel="icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="nav-item"><a href="index.html">Homepage</a></li>
+        <li class="nav-item"><a href="enhancements.html">Enhancements</a></li>
+        <li class="nav-item active"><a href="topic.html">Topic</a></li>
+        <li class="nav-item"><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+    <article class="container">
+      <header>
+        <p id="header">All About JSON</p>
+      </header>
+      <img id="json-logo" src="styles/images/JSON_vector_logo.svg.png" alt="json logo" /><!-- https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg -->
+      <h1>JSON</h1>
+      <h2>What is JSON?</h2>
+      <ul>
+        <li>JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation</li>
+        <li>JSON is a lightweight data-interchange format</li>
+        <li>JSON is "self-describing" and easy to understand(as said by many)</li>
+        <li>JSON is language independent *</li>
+      </ul>
+      <aside class="help-text">
+        <p>*<br />
+          JSON uses JavaScript syntax, but the JSON format is text only.<br />
+          Text can be read and used as a data format by any programming language.
+        </p>
+      </aside>
+      <p>&#8195;<a href="https://www.w3schools.com/js/js_json_intro.asp">JSON - Introduction|W3schools.org</a></p>
+      <hr />
+      <p>
+        JSON is easy for humans as well as machines to edit.
+        It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999.
+        JSON is a text format that is completely language independent (any language can be used to phrase data into json format) but uses conventions that are familiar to programmers
+        of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others.
+        These properties make JSON an ideal data-interchange language.
+        <sup><a href="http://json.org/">[1]</a></sup>
+      </p>
+      <h2>History of JSON</h2>
+      <p>
+        JSON grew out of a need for stateful, real-time server-to-browser communication protocol without using browser plugins such as Flash or Java applets, the dominant methods used in the early 2000s.
+        <sup><a href="https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/JSON.html">[2]</a></sup>
+      </p>
+      <p>
+        Douglas Crockford was <sup><a href="https://www.youtube.com/watch?v=-C-JoyNuQJs">[3]</a></sup> the first to specify and popularize the JSON format.
+        The acronym was coined at State Software, a company co-founded by Crockford,
+        Chip Morningstar and Robert F. Napiltonia in April 2001 and funded by Tesla Ventures.
+      </p>
+      <aside id="structures">
+        <p>
+          Two structures on which JSON is built are :
+        </p>
+          <ol>
+            <li>A collection of name/value pairs. In various languages, this is known as an object, record, struct, dictionary, hash table, keyed list, or associative array.</li>
+            <li>An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.</li>
+          </ol>
+      </aside>
+      <p>
+        These are universal data structures.
+        Virtually it is supported by all mordern programming languages such as python, ruby, c, c++, c#, java, and many more! in one form or other.
+        It makes sense that a data format that is interchangeable with programming languages also be based on these structures.
+        <sup><a href="http://json.org/">[4]</a></sup>
+      </p>
+      <p>
+        The other technologies that were used prior to the invention of json were
+      </p>
+        <ul>
+          <li>xml</li>
+          <li>flash by Adobe</li>
+          <li>java applets</li>
+          <li>... and the list goes on</li>
+        </ul>
+      <p>So i have put together the comparison between json and the most commmonly used technology named XML</p>
+      <h1>JSON v/s XML</h1>
+      <section id="table">
+        <p>This table represents the major differences between Javascript Object Notation and XML</p>
+        <table>
+          <thead>
+            <tr>
+              <td></td>
+              <th>JavaScript Object Notation (JSON)</th>
+              <th>Xtensible Markup Language (XML)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Document Markup Language</th>
+              <td>NO</td>
+              <td>YES</td>
+            </tr>
+            <tr>
+              <th>Schema</th>
+              <td>NO</td>
+              <td>YES</td>
+            </tr>
+            <tr>
+              <th>Includes namespaces</th>
+              <td>NO</td>
+              <td>YES</td>
+            </tr>
+            <tr>
+              <th>maps directly to object models</th>
+              <td>YES</td>
+              <td>NO</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Verbose</th>
+              <td>LESS</td>
+              <td>MORE</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="image">
+        A Graph - that shows the change in the usage of technologies from 2005 to 2013 :-<br />
+        <img class="image-contain" src="images/xml_vs_json_graph.png" alt="xml vs json graph" /><!-- https://www.programmableweb.com/wp-content/xml-json-all-time1-600x382.png -->
+      </section>
+      <section id="argument">
+        <h2>The Argument</h2>
+        The biggest argument for JSON is its direct mapping to programming language objects.
+        While this may seem minor in comparison to the arguments for XML outlined above,
+        it is in fact a major factor contributing to the choice of JSON over XML.
+      </section>
+      <section id="future">
+        <h2>The Future(Prediction)</h2>
+        If the future of JSDON is predicted, it looks like JSON wins but as the technology is evolving
+        every day and it can not be said that it is permanent and no better technology can come which deffeats JSON
+        Moreover This can be said for XML too the future is in consistant!
+      </section>
+    </article>
+    <footer class="footer">
+      <hr />
+      Markup By - <a class="link" href="mailto:101983924@student.swin.edu.au">Anmol Dua</a>
+    </footer>
+  </body>
+</html>

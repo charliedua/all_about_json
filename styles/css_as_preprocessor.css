@@ -1,0 +1,102 @@
+/*
+  filename: css_as_preprocessor.css
+  author: Anmol Dua
+  created: 20-03-2018
+  last-modified: 22-3-2018
+  description: a preprocessor for css can be used as a library
+*/
+
+/*
+   The code below is meant for making a navbar also known as a navigation bar,
+   the classes should be used in html as it is and this file should not to be
+   editted.
+*/
+/* NOTE: The colours are not changeable so you have to stick with it */
+
+.navbar ul {
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+  font-size: 1.5em;
+  list-style-type: none;
+  background: #ff420e;
+  box-shadow: 1px 1px 10px 1px gray;
+}
+
+.navbar .nav-item {
+  border-right: 2px solid #ff420e;
+  float: left;
+  border-bottom: 2px solid #ff420e;
+}
+
+.navbar .nav-item a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar .nav-item a:hover{
+  text-decoration: none;
+}
+.navbar .nav-item:hover {
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  border-bottom: 2px solid #fff;
+}
+.nav-item active {
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  border-bottom: 2px solid #fff;
+}
+.help-text {
+  border-radius: 1px;
+  background-color: #89da59;
+  border-left: 6px solid #528435;
+  color: black;
+}
+.help-text p {
+  padding-left: 10px;
+}
+.form-control input,
+.form-control input:valid {
+  border: solid #ccc 3px;
+}
+input:invalid {
+  border: solid red 3px;
+}
+.header {
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 2px double black;
+}
+.header h1 {
+  font: italic small-caps normal 3em/150% Arial, Helvetica, sans-serif;
+}
+.footer {
+  font-size: 0.8em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer .link {
+  text-decoration: none;
+  color: inherit;
+}
+.footer .link:hover {
+  color: red;
+  font-size: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .header h1 {
+    font: italic small-caps normal 2em/150% Arial, Helvetica, sans-serif;
+  }
+}
